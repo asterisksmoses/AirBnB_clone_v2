@@ -37,7 +37,7 @@ def fl_number(n):
 parameter."""
     return "{} is a number".format(n)
 
-@application.route('/number_template/<int:n>')
+@application.route('/number_template/<int:n>', strict_slashes=False)
 def num_template(n):
     """This function prints a number template."""
     return render_template('5-number.html', num=n)
