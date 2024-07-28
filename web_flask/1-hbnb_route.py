@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-from flask import Flask
-application = Flask(__name__)
 """After importing the flask module an application instance of
 Flask was created."""
+from flask import Flask
+application = Flask(__name__)
 
 @application.route('/', strict_slashes=False)
 def home():
